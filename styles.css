@@ -7,7 +7,7 @@
 
 /* Body Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f4;
@@ -25,7 +25,7 @@ header {
 header nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     gap: 20px;
 }
 
@@ -53,7 +53,7 @@ main {
     margin: 0 auto;
     background: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(5, 0, 100, 0.1);
 }
 
 section {
@@ -85,7 +85,7 @@ form label {
 
 form input,
 form textarea {
-    width: 100%;
+    width: 50%;
     padding: 0.5rem;
     margin-bottom: 1rem;
     border: 1px solid #ccc;
@@ -108,7 +108,7 @@ form button:hover {
 
 /* Footer Styling */
 footer {
-    text-align: center;
+    text-align: left;
     padding: 1rem 0;
     background: #333;
     color: #fff;
