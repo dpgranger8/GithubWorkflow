@@ -85,7 +85,7 @@ form label {
 
 form input,
 form textarea {
-    width: 100%;
+    width: 50%;
     padding: 0.5rem;
     margin-bottom: 1rem;
     border: 1px solid #ccc;
@@ -108,7 +108,7 @@ form button:hover {
 
 /* Footer Styling */
 footer {
-    text-align: center;
+    text-align: left;
     padding: 1rem 0;
     background: #333;
     color: #fff;
