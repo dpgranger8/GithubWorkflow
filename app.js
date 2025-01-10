@@ -3,12 +3,6 @@ const rotated = document.getElementById("rotated");
 const colors = ["blue", "red", "orange", "lightblue", "yellow", "green", "brown"]
 let transform = 0;
 
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
-
-let intervalGettingChanged = 
-
 var intervalID = window.setInterval(myCallback, 10);
 
 function myCallback() {
@@ -16,12 +10,24 @@ function myCallback() {
     rotated.style.transform = "rotate(" + transform + "deg)";
 }
 
-function colorfun() {
-    document.body.style.backgroundColor = "blue";
+document.getElementById("epilepsy").onclick = function () {
+    let counter = 0;
+
+    // Use setInterval for periodic execution
+    const intervalId = setInterval(() => {
+        if (counter >= 100) {
+            clearInterval(intervalId); // Stop after 1000 iterations
+            document.body.style.backgroundColor = "white";
+            return;
+        }
+
+        colorfun();
+        counter++;
+    }, 10); // Run every 100ms
 }
 
-document.getElementById("epilepsy").onclick = function () {
-    for (i = 0; i < 1000; i++) {
-
-    }
+function colorfun() {
+    let newColor = colors[Math.floor(Math.random() * colors.length)]
+    console.log(newColor);
+    document.body.style.backgroundColor = newColor;
 }
